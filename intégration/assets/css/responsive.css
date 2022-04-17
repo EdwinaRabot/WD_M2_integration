@@ -1,0 +1,180 @@
+@media screen and (orientation: portrait) {
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0 4em;
+        align-items: inherit;
+        }
+
+    .menu_main_pages {
+    display: flex;
+    flex-direction: column;}
+
+    .menu_main_pages li {
+    margin: 1em 0em;}
+
+    .hero-text{
+        height: 40vh;
+        }
+
+    h3, h2 {
+        text-align: inherit;
+        width: 40vw;
+    }       
+
+    li{
+        margin: 1em auto;
+    }
+
+    .checkbox-ios__toggle + .checkbox-ios__label {
+        height: 2.1em;
+        width: 4em;
+    }
+
+    .button-primary{
+        margin: 1em 0;
+    }
+
+    .conseils h2{
+        text-align: center;
+        margin: auto;
+        width: auto;
+    }
+
+
+    section{
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+
+    .checkbox-ios__label{
+        right: 3em;
+        top: 5em;
+    }
+    .introduction img{
+        right: 5em;
+        top: 138vh;
+    }
+
+    .section-image-texte {
+        display: block;
+        height: auto;}
+
+    .section-texte-image {
+       display: block;
+       height: auto;}
+
+    .section-texte-image-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        margin: auto;
+     min-height: 100vh;
+
+    }
+    p{
+        min-width: 40vw;
+    }
+
+    .section-image-texte {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .section-texte-image img, .section-image-texte img{
+        width: -webkit-fill-available;
+        object-position: center;
+    }
+
+    .testimonials{
+        justify-content: center;
+        margin-top: 14rem
+    }
+    
+    .dots {
+        justify-content: center;}
+
+    blockquote svg {
+        top: 5em;}
+
+    .details-section {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .section-form {
+        height: 100vh;
+    }
+
+    .calendar-section {
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .details-section div {
+        width: 50%;
+        margin: auto;
+    }
+
+    details {
+        margin:2em auto;
+    }
+
+    .datainput label {
+        font-size: 1.2em;}
+
+
+    .datainput select {
+        font-size: 1.2em;}       
+
+    form .button-primary {
+        display: block;
+        font-size: 1.5em;
+        margin: 3em auto;
+    }
+
+    .title h3{
+        margin: auto;
+    }
+    .title h2{
+        margin: 1em auto;
+    }
+
+    .checkbox-ios__toggle + .checkbox-ios__label:before {
+      font-size: 3.5vh;
+
+    }
+    footer {
+        background-color: var(--main-color-vert);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    footer div {
+        margin: 2em;
+    }
+
+    .social-media-buttons {
+        display: flex;
+        justify-content: unset;
+    }
+
+    .social-media-buttons .icon {
+        display: flex;
+        justify-content: unset;
+        align-items: center;
+        margin: 0em 1em 0em 0;
+    }
+
+    .social-media{
+        width: 40vw;
+    }
+}

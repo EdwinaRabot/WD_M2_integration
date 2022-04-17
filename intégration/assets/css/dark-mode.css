@@ -1,0 +1,90 @@
+:root{
+ --main-color-beige: #FEFBF4;
+ --main-color-vert: #53683E;
+ --main-color-noir: #1D1D1B;
+}
+
+
+.checkbox-ios__toggle {
+  display: none;
+}
+.checkbox-ios__toggle + .checkbox-ios__label {
+  display: block;
+  transition: 0.3s;
+  border-radius: 3.125em;
+  background-color: var(--main-color-beige);
+  height: 1.4em;
+  margin-bottom: 0;
+  cursor: pointer;
+  width: 3em;
+  right: 2em;
+  top: 2em;
+}
+
+input[type="checkbox"] + label {
+  z-index: 10;
+  position: fixed;
+  cursor: pointer;
+  font-size: 1.5em;
+  line-height: 1.3;
+  border: solid 0.05em var(--main-color-vert);
+}
+
+.checkbox-ios__toggle + .checkbox-ios__label:before {
+  transition: 0.3s;
+  content: "🌝";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  font-size: 3.8vh;
+}
+
+input[type="checkbox"]:checked + label:before {
+  color: var(--main-color-beige);
+  content: "🌚";
+  font-weight: bold;
+  width: 1.2em;
+  height: 1.2em;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.checkbox-ios__toggle:checked + .checkbox-ios__label {
+  background-color: var(--main-color-vert);
+}
+.checkbox-ios__toggle:checked + .checkbox-ios__label:before {
+      left: calc(100% - 1.1em);
+}
+
+main {
+  transition: background-color 800ms ease;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+#darkmode:checked ~ main{
+  background-color: var(--main-color-noir);
+  color: var(--main-color-beige);
+}
+#darkmode:checked ~ main .myheader,
+#darkmode:checked ~ main .footer h1 h2 a{
+  background-color: var(--main-color-noir);
+  color: var(--main-color-beige);
+}
+
+#darkmode:checked ~ h1 h2 nav{
+  color:var(--main-color-beige);
+}
+
+#darkmode:checked ~ main {
+  background-blend-mode: saturation;
+}
+
+#darkmode:checked ~ .datainput label {
+  color: var(--main-color-beige);
+}
+
+#darkmode:checked ~ button {
+color: var(--main-color-beige);
+border-color: var(--main-color-beige);}
